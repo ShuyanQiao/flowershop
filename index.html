@@ -180,12 +180,9 @@
             bigimg.style.justifyContent = 'center';
             bigimg.style.alignItems = 'center';
             bigimg.style.zIndex = "100000";
-            //放在页面的body下面添加子元素
             document.body.appendChild(bigimg);
             let large = document.createElement('img');
             large.src = image.src;
-            // large.style.maxHeight = '90%';
-            // large.style.maxWidth = '90%';
             large.style.height = '60%';
             bigimg.appendChild(large);
             large.addEventListener('click', function () {
